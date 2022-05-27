@@ -1,21 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+:root{
+    --primary : #F2C94C;
+    --black : #333333;
+    --white : #F5F5F5;
+}
+
 body{
     text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: larger;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--primary);
+    text-shadow: 1px 1px var(--white);
 }
 
 #txt-english{
     width: 80%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     display: block;
     padding: 1rem;
-    height: 20vh;
-    max-width: 700px;
+    height: 15vh;
+    max-width: 500px;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+    border: 2px solid var(--black);
 }
 
 #txt-banana{
-    border: 1px solid black;
+    border: 2px solid var(--primary);
     width: 80%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 1rem;
-    height: 20vh;
-    max-width: 700px;
+    height: 15vh;
+    max-width: 500px;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+#btn-translate, #btn-reset{
+    font-family: 'Kalam', cursive;
+    background-color: var(--primary);
+    border: 1px solid var(--black);
+    font-weight: 600;
+    width: fit-content;
+    padding: 5px 30px;
+    border-radius: 8px;
+    box-shadow: 2px 1px var(--black) ;
+}
+
+footer{
+    background-color: var(--primary);
+    bottom: 10px;
+    padding: 0;
+    width: 100%;
+}
+
+footer > p{
+    margin: auto;
+    max-width: 500px;
 }
